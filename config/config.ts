@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 import routes from './routes';
 import theme from './theme';
+import proxy from './proxy'
 
 export default defineConfig({
   // node_modules 目录下依赖文件的编译方式
@@ -27,5 +28,7 @@ export default defineConfig({
   },
   // 指定react app渲染到的HTML元素id
   mountElementId: 'app',
-  theme
+  theme,
+  // 引用反向代理的配置
+  proxy
 });
