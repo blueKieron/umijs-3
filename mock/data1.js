@@ -15,4 +15,9 @@ export default {
   'GET /api/users/create': (req, res) => {
     res.end('OK');
   },
+  'GET /umi/auth': (req, res) => {
+    res.send({
+      isLogin: false,
+    });
+  },
 };

@@ -18,6 +18,7 @@ export default [
         wrappers: ['@/wrappers/auth'],
         component: '@/layouts/asidelayouts',
         routes: [
+          { path: '/dva', component: '@/pages/dva' },
           { path: '/goods', component: '@/pages/goods' },
           { path: '/goods/:id', component: '@/pages/goodsDetail' },
         ],
